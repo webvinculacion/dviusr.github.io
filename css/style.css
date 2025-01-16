@@ -1,0 +1,189 @@
+:root {
+    --azul-principal: #0033A0;
+    --azul-claro: #0056B3;
+    --azul-oscuro: #001F5E;
+    --oro-principal: #FFCC00;
+    --oro-claro: #FFDD33;
+    --oro-oscuro: #CC9900;
+    --gris-claro: #F5F5F5;
+    --gris-medio: #CCCCCC;
+    --gris-oscuro: #333333;
+    --blanco: #FFFFFF;
+    --font-size-base: 16px;
+    --padding-base: 10px;
+    --margin-base: 10px; 
+}
+
+
+body {
+    font-family: var(--font-principal);
+    font-size: var(--font-size-base);
+    color: var(--color-primario);
+    padding: var(--padding-base);
+    margin: var(--margin-base);
+}
+
+h1 {
+    color: var(--color-secundario);
+    margin-bottom: var(--margin-base);
+}
+
+
+
+/* footer  */
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: var(--color-azul);
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .caja{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .caja h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-mostaza);
+  }
+  .caja .contenido{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .caja .contenido:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: var(--color-mostaza);
+  }
+  .caja .contenido:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: var(--color-mostaza);
+    top: -10px;
+  }
+  .izquierda .contenido p {
+    text-align: justify;
+    color: var(--color-blanco);
+  }
+  .izquierda .contenido .social{
+    margin: 20px 0 0 0;
+  }
+  .izquierda .contenido .social a {
+    padding: 0 2px;
+  }
+  .izquierda .contenido .social a span { 
+    height: 40px;
+    width: 40px;
+    background: var(--color-blanco);
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .izquierda .contenido .social a span:hover{
+    background: var(--color-mostaza);
+  }
+  .center .contenido .fas{
+    font-size: 1.4375rem;
+    background: var(--color-blanco);
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .contenido .fas:hover{
+    background: var(--color-mostaza);
+  }
+  .center .contenido .texto-f {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+    color: var(--color-blanco); 
+  }
+  .center .contenido .phone{
+    margin: 15px 0;
+  }
+  .derecha form .texto-f{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: var(--color-blanco);
+  }
+  .derecha form .msg{
+    margin-top: 10px;
+  }
+  .derecha form input, .derecha form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: var(--color-blanco);
+    padding-left: 10px;
+    border: 1px solid var(--color-blanco);
+  }
+  .derecha form input:focus,
+  .derecha form textarea:focus{
+    outline-color: #3498db;
+  }
+  .derecha form input{
+    height: 35px;
+  }
+  .derecha form .btn{
+    margin-top: 10px;
+  }
+  .derecha form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--color-secundario);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    color: var(--color-blanco);
+  }
+  .derecha form .btn button:hover{
+    background: #000;
+  }
+  .leyenda .center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+    text-align: center;
+  }
+  .leyenda .center span{
+    color: #656565;
+   
+  }
+  .leyenda .center a{
+    color: var(--color-mostaza);
+    text-decoration: none;
+  
+  }
+  .leyenda .center a:hover{
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .caja{
+      margin: 5px 0;
+    }
+  }
